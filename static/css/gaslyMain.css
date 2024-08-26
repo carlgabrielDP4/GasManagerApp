@@ -1,44 +1,79 @@
+/* stuff on the main page NOT SIDEBAR */
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background: linear-gradient(45deg, #1c1c1c, #0033cc);
+    color: #fff;
 }
 
-p {
+.container {
+    margin-top: 20px;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.feature-card {
+    background: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px; /* Set a max width */
+    margin: 0 auto; /* Center the card */
+}
+
+.feature-card h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
     font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #999;
+    margin-bottom: 20px;
 }
 
-a,
-a:hover,
-a:focus {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.navbar {
-    padding: 15px 10px;
-    background: #fff;
+.feature-card .button {
+    background: #0033cc; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px;
     border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #ddd;
-    margin: 40px 0;
+.feature-card .button:hover {
+    background: #1a1a1a; /* Darker color on hover */
 }
 
-/* Sidebar styling */
+
+
+/* sidebar shits */
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: linear-gradient(45deg, #1c1c1c, #0033cc);
+    background: linear-gradient(45deg, #333, #000); /* Grey to black gradient */
     color: #fff;
     transition: all 0.3s;
     position: fixed;
@@ -50,12 +85,12 @@ a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: black;
+    background: #000; /* Solid black */
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid #444; /* Dark grey border */
 }
 
 #sidebar ul li a {
@@ -67,12 +102,14 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    background: rgba(255, 255, 255, 0.2); /* Light transparent background on hover */
+    color: #000; /* Dark text color on hover */
+    background: rgba(255, 255, 255, 0.3); /* Light transparent background on hover */
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    background: rgba(255, 255, 255, 0.2); /* Light transparent background for active/expanded items */
+    color: #000; /* Dark text color for active/expanded items */
+    background: rgba(255, 255, 255, 0.3); /* Light transparent background for active/expanded items */
 }
 
 /* Content area */
@@ -86,7 +123,6 @@ a[aria-expanded="true"] {
 #sidebar.active {
     margin-left: -250px;
 }
-
 
 /* Hide navbar */
 .navbar.d-none {
