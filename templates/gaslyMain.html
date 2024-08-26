@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gasly - Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/gaslyMain.css">
+</head>
+<body>
+    <!-- Include the navbar -->
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <header class="header">
+            <h1>Welcome to Gasly</h1>
+            <p>Your ultimate tool for tracking and optimizing fuel consumption.</p>
+        </header>
+
+        <section class="features">
+            <div class="feature-card">
+                <h2>Manage Your Cars</h2>
+                <p>Add and track all your vehicles in one place.</p>
+                <a href="/my-cars" class="button">View My Cars</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Page Content -->
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                    <span>Toggle Sidebar</span>
+                </button>
+                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-align-justify"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#">Page</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Page</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Page</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Page</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content goes here -->
+    </div>
+
+    <!-- JS for Bootstrap and custom script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Custom JavaScript for sidebar toggle -->
+    <script>
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                // $('#content').toggleClass('active');
+                // $('nav.navbar').toggleClass('d-none'); // Hide navbar when sidebar is toggled
+            });
+        });
+    </script>
+</body>
+</html>
