@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>PodLibrary CS235</title>
+    <link rel="stylesheet" href="./static/css/home.css">
 </head>
 <body>
-    <h1>Welcome to the Home Page</h1>
+    <!-- landing page -->
+    <section class="landing-page">
+        
+        <h1>CS235 Pod Library</h1>
+        <h2>Home of the Best Podcasts</h2>
+        <h5>&copy; cdel028 | sbaa681 | hjaf966 </h5>
+
+    </section>
+
+    <section id="project-section" class="project-section">
+        <h1>About Our CompSci235 Project</h1>
+        <p>For our CompSci235 group assignment, we developed a full-stack Podcast Library app using Flask. It features podcast browsing, detailed podcast pages, episode viewing, and categorization, all presented in an intuitive and user-friendly interface.
+
+        </p>
+        
+        <div class="developers">
+            <div class="developer-card">
+                <h3>Carl Dela Pena</h3>
+                <p>Design and Front-End</p>
+            </div>
+            <div class="developer-card">
+                <h3>Suhaib Baalousha</h3>
+                <p>Backend</p>
+            </div>
+            <div class="developer-card">
+                <h3>Hashim Jafer</h3>
+                <p>Full-Stack</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- pre cool scroll feature with JS when landing buttons are clicked -->
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>

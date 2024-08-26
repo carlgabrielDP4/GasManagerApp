@@ -1,0 +1,107 @@
+/* Global reset */
+body, h1, h2, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ddd;
+    background: #1e1e1e;
+    text-align: center;
+}
+
+.landing-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0d0d0d, #3a0a6b);
+    color: #e0e0e0;
+    padding: 50px 20px;
+}
+
+.landing-page h1 {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+}
+
+.landing-buttons button {
+    background-color: #6a0dad;
+    color: #e0e0e0;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.993);
+}
+
+.landing-buttons button:hover {
+    background-color: #5a00a3;
+    transform: scale(1.05);
+}
+
+.landing-buttons button:focus {
+    outline: none;
+}
+
+/* Project section */
+.project-section {
+    padding: 60px 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+    background: linear-gradient(45deg, #0d0d0d, #3a0a6b);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #e0e0e0; 
+}
+
+.project-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #b0b0b0; 
+}
+
+/* Developer cards */
+.developers {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.developer-card {
+    flex: 1;
+    background-color: #333333; 
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.developer-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0px 10px 10px rgba(135, 23, 233, 0.375); 
+}
+
+.developer-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #e0e0e0; 
+}
+
+.developer-card p {
+    font-size: 1em;
+    color: #b0b0b0; 
+}
