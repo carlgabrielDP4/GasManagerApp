@@ -3,44 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PodLibrary CS235</title>
+    <title>Gasly</title>
     <link rel="stylesheet" href="./static/css/home.css">
 </head>
 <body>
-    <!-- landing page -->
     <section class="landing-page">
-        
-        <h1>CS235 Pod Library</h1>
-        <h2>Home of the Best Podcasts</h2>
-        <h5>&copy; cdel028 | sbaa681 | hjaf966 </h5>
+        <h1>Say Hello to Gasly!</h1>
+        <h2>Your Ultimate Companion for Fuel Efficiency Tracking</h2>
+        <h5>Developed By Carl Dela Pena©</h5>
+
+        <div class="landing-buttons">
+            <button id="learnMoreBtn" class="landing-page-button" onclick="scrollToSection('project-section')">Learn More</button>
+            <button id="gaslyBtn" class="landing-page-button">Get Started!</button>
+            <a href="https://www.carjam.co.nz/" target="_blank"> 
+                <button id="carJam" class="landing-page-button">Find Your Car</button>
+            </a>
+        </div>
 
     </section>
-
+    
     <section id="project-section" class="project-section">
-        <h1>About Our CompSci235 Project</h1>
-        <p>For our CompSci235 group assignment, we developed a full-stack Podcast Library app using Flask. It features podcast browsing, detailed podcast pages, episode viewing, and categorization, all presented in an intuitive and user-friendly interface.
-
-        </p>
+        <h1>Who's Gasly?</h1>
+        <p>Gasly helps you efficiently track and analyze your fuel consumption. Log your fuel usage, monitor expenses, and generate detailed reports to optimize your gas expenses and improve efficiency. User-friendly and insightful, Gasly makes managing your fuel data effortless.</p>
+        <h4>Gasly believes Smiles per Gallon is more important than Miles per Gallon</h4>
         
-        <div class="developers">
-            <div class="developer-card">
-                <h3>Carl Dela Pena</h3>
-                <p>Design and Front-End</p>
+        <div class="hover-cards">
+            <div class="hover-card">
+                <h3>Monitor Fuel Expenses</h3>
+                <p>Logged history of your trips to BP connect</p>
             </div>
-            <div class="developer-card">
-                <h3>Suhaib Baalousha</h3>
-                <p>Backend</p>
+    
+            <div class="hover-card">
+                <h3>Track Fuel Efficiency</h3>
+                <p>Tracks the fuel efficiency reading for each journey</p>
             </div>
-            <div class="developer-card">
-                <h3>Hashim Jafer</h3>
-                <p>Full-Stack</p>
+    
+            <div class="hover-card">
+                <h3>Analyse Driving Habits</h3>
+                <p>Analytics to help adjust driving habits to attain optimal efficiency</p>
             </div>
         </div>
     </section>
     
 
 
-    <!-- pre cool scroll feature with JS when landing buttons are clicked -->
+    <!-- auto scroll feature -->
     <script>
         function scrollToSection(sectionId) {
             document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });

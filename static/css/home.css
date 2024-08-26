@@ -1,4 +1,3 @@
-/* Global reset */
 body, h1, h2, p, input, button {
     margin: 0;
     padding: 0;
@@ -7,8 +6,8 @@ body, h1, h2, p, input, button {
 
 body {
     font-family: Arial, sans-serif;
-    color: #ddd;
-    background: #1e1e1e;
+    color: #e0e0e0;
+    background: #1c1c1c;
     text-align: center;
 }
 
@@ -18,7 +17,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #0d0d0d, #3a0a6b);
+    background: linear-gradient(45deg, #1c1c1c, #0033cc);
     color: #e0e0e0;
     padding: 50px 20px;
 }
@@ -28,35 +27,55 @@ body {
     margin-bottom: 0.5em;
 }
 
-.landing-buttons button {
-    background-color: #6a0dad;
-    color: #e0e0e0;
+.landing-page h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.landing-page h5 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.landing-page-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 800px; 
+    padding: 20px;
+}
+
+.landing-page-button {
+    flex: 1;
+    background-color: #0033cc;
+    color: #ffffff;
     border: none;
     padding: 15px 30px;
     font-size: 1.2em;
     border-radius: 8px;
-    margin: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.993);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.6s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 10px; /* Additional margin to spread out each button */
 }
 
-.landing-buttons button:hover {
-    background-color: #5a00a3;
+.landing-page-button:hover {
+    background-color: #002299;
     transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
 }
 
-.landing-buttons button:focus {
+.landing-page-button:focus {
     outline: none;
 }
 
-/* Project section */
 .project-section {
     padding: 60px 30px;
     max-width: 1000px;
     margin: 40px auto;
     text-align: center;
-    background: linear-gradient(45deg, #0d0d0d, #3a0a6b);
+    background: linear-gradient(45deg, #1c1c1c, #0033cc);
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
@@ -64,25 +83,24 @@ body {
 .project-section h1 {
     font-size: 3em;
     margin-bottom: 20px;
-    color: #e0e0e0; 
+    color: #e0e0e0;
 }
 
 .project-section p {
     font-size: 1.2em;
     margin-bottom: 40px;
-    color: #b0b0b0; 
+    color: #b0b0b0;
 }
 
-/* Developer cards */
-.developers {
+.hover-cards {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-.developer-card {
+.hover-card {
     flex: 1;
-    background-color: #333333; 
+    background-color: #2a2a2a;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -90,18 +108,18 @@ body {
     text-align: center;
 }
 
-.developer-card:hover {
+.hover-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 0px 10px 10px rgba(135, 23, 233, 0.375); 
+    box-shadow: 0 0px 5px 5px rgba(255, 255, 255, 0.5);
 }
 
-.developer-card h3 {
+.hover-card h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #e0e0e0; 
+    color: #e0e0e0;
 }
 
-.developer-card p {
+.hover-card p {
     font-size: 1em;
-    color: #b0b0b0; 
+    color: #b0b0b0;
 }
